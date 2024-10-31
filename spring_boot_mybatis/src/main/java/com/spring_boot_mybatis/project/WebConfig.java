@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		//외부파일 이미지 사용하도록 mapping
 		registry.addResourceHandler("/prd_images/**")
-		.addResourceLocations("file:///usr/local/project/product_images/"); // 서버 경로
+		.addResourceLocations("file:///usr/local/project/product_images/product_images/"); // 서버 경로
 		//.addResourceLocations("file:///C:/springWorkspace/product_images/");
 		registry.addResourceHandler("/images/**","/audio/**")
 		.addResourceLocations("file:///usr/local/project/upload/"); // 서버 경로
